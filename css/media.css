@@ -1,0 +1,416 @@
+@media (max-width: 1140px) {
+  /* Generic */
+
+  .container {
+    width: 720px;
+  }
+
+  /* Header */
+
+  .header {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+  }
+
+  .header__nav-bar {
+    margin-top: 30px;
+    order: 1;
+  }
+
+  /* Start */
+
+  .start {
+    flex-wrap: wrap;
+  }
+
+  .start__description {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    order: 0;
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  /* Amount */
+
+  .main__amount {
+    margin-bottom: 75px;
+  }
+
+  .features__img {
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  .plan__card-wrapper {
+    padding: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .plan__card {
+    margin-bottom: 30px;
+  }
+
+  .plan__card:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Global */
+
+  .global__text {
+    margin-bottom: 40px;
+  }
+
+  .global__map {
+    width: 720px;
+  }
+
+  .global__sponsor {
+    width: 120px;
+  }
+
+  /* Review */
+
+  .review__card {
+    width: 290px !important;
+    height: auto !important;
+    padding-bottom: 30px;
+  }
+
+  .review__card-wrapper {
+    width: 700px;
+  }
+
+  /* Subscribe */
+
+  .subscribe {
+    width: 720px;
+    padding: 0 20px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer__about {
+    order: 1;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Generic */
+
+  body {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .section-title {
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .container {
+    width: 320px;
+  }
+
+  /* Header */
+
+  .header {
+    justify-content: space-between;
+  }
+
+  /* Hamburger */
+
+  .hamburger__toggle {
+    opacity: 0;
+  }
+
+  .hamburger__button {
+    z-index: 150;
+
+    display: flex;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+  }
+
+  .hamburger__item--login-bar:nth-child(2) {
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #000000;
+  }
+
+  .hamburger__button > span,
+  .hamburger__button > span::before,
+  .hamburger__button > span::after {
+    position: absolute;
+
+    display: block;
+    width: 26px;
+    height: 2px;
+
+    background-color: #616161;
+  }
+
+  .hamburger__button > span::before {
+    top: -8px;
+    content: "";
+  }
+
+  .hamburger__button > span::after {
+    top: 8px;
+    content: "";
+  }
+
+  .hamburger__box {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    visibility: hidden;
+
+    display: block;
+    margin: 0;
+    padding: 80px 0;
+    width: 300px;
+    height: 100%;
+
+    text-align: center;
+
+    list-style: none;
+    background-color: #eceff1;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .hamburger__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Rubik", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .hamburger__item:hover {
+    background-color: #cfd8dc;
+  }
+
+  .hamburger__toggle:checked ~ .hamburger__button > span {
+    transform: rotate(45deg);
+  }
+
+  .hamburger__toggle:checked ~ .hamburger__button > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  .hamburger__toggle:checked ~ .hamburger__button > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .hamburger__toggle:checked ~ .hamburger__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  /* Start */
+
+  .main__start {
+    margin-bottom: 50px;
+  }
+
+  .start {
+    justify-content: space-evenly;
+  }
+
+  .start__description {
+    width: 310px;
+    margin-bottom: 0;
+  }
+
+  .start__title {
+    width: 300px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .start__text {
+    width: 300px;
+    margin-bottom: 25px;
+  }
+
+  .start__img {
+    left: 0;
+    width: 300px;
+  }
+
+  /* Amount */
+
+  .amount {
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
+
+  .amount__item {
+    justify-content: flex-start;
+    width: 160px;
+    margin-bottom: 20px;
+
+    border-right: 0;
+    border-bottom: 2px solid #eeeff2;
+  }
+
+  .amount__item:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  /* Features */
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features__description {
+    width: 300px;
+  }
+
+  .features__img {
+    width: 300px;
+
+    margin: 0;
+  }
+
+  /* Plan */
+
+  .main__plan {
+    margin-bottom: 75px;
+  }
+
+  .plan__text {
+    width: 290px;
+  }
+
+  .global__title {
+    width: 300px;
+  }
+
+  /* Global */
+
+  .global__text {
+    width: 300px;
+    margin: 0;
+  }
+
+  .global__map {
+    width: 300px;
+    margin: 0;
+  }
+
+  .global__sponsors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .global__sponsor {
+    height: 100px;
+  }
+
+  /* Review */
+
+  .review__text {
+    width: 300px;
+  }
+
+  .review__card-wrapper {
+    width: 300px;
+  }
+
+  .review__card-top {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .review__card-rating {
+    margin-top: 10px;
+  }
+
+  .review__button-wrapper {
+    display: none;
+  }
+
+  /* Subscribe */
+
+  .subscribe {
+    left: 50%;
+
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    transform: translate(-50%, 0);
+  }
+
+  .subscribe__title {
+    width: 290px;
+  }
+
+  .subscribe__text {
+    width: 280px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Footer */
+
+  .footer__lists {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .footer__about {
+    margin-left: 10px;
+  }
+
+  .footer__text {
+    width: 290px;
+  }
+
+  .footer__list-wrapper {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header__nav-bar {
+    display: none;
+  }
+
+  .header__login-row {
+    display: none;
+  }
+
+  .header {
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 50px;
+  }
+}
